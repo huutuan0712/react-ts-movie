@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-auto {
+  height: auto !important;
+}
+.truncate-one-line {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  max-height: 2.5em;
+}
+.truncate-two-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  max-height: 2.5em;
+}
+.customr-scroll {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+.customr-scroll::-webkit-scrollbar {
+  width: 1rem;
+}
+.customr-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.customr-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+}
